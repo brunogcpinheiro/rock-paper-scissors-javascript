@@ -90,3 +90,18 @@ header {
   text-align: center;
   margin-top: 25px;
 }
+
+.win {
+  border: 4px solid greenyellow;
+  box-shadow: 0 0 10px green;
+}
+
+.lose {
+  border: 4px solid tomato;
+  box-shadow: 0 0 10px red;
+}
+
+.draw {
+  border: 4px solid gray;
+  box-shadow: 0 0 10px #333;
+}
