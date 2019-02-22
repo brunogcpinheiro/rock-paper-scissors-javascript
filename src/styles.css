@@ -105,3 +105,10 @@ header {
   border: 4px solid gray;
   box-shadow: 0 0 10px #333;
 }
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  color: cornflowerblue;
+  margin-top: 50px;
+}

@@ -15,9 +15,9 @@ function getComputerChoice() {
 }
 
 function convertToWord(letter) {
-  if (letter === "r") return "Rock";
-  if (letter === "p") return "Paper";
-  if (letter === "s") return "Scissors";
+  if (letter === "r") return "Pedra";
+  if (letter === "p") return "Papel";
+  if (letter === "s") return "Tesoura";
 }
 
 function win(user, computer) {
@@ -28,9 +28,9 @@ function win(user, computer) {
   const smallerCompWord = "comp".fontsize(2).sub();
   result_div.innerHTML = `${convertToWord(
     user
-  )}${smallerUserWord} beats ${convertToWord(
+  )}${smallerUserWord} ganha de ${convertToWord(
     computer
-  )}${smallerCompWord} .You win!`;
+  )}${smallerCompWord} .Você venceu!`;
   document.getElementById(user).classList.add("win");
   setTimeout(function() {
     document.getElementById(user).classList.remove("win");
@@ -45,9 +45,9 @@ function lose(user, computer) {
   const smallerCompWord = "comp".fontsize(2).sub();
   result_div.innerHTML = `${convertToWord(
     user
-  )}${smallerUserWord} loses to ${convertToWord(
+  )}${smallerUserWord} perde de ${convertToWord(
     computer
-  )}${smallerCompWord} .You lose!`;
+  )}${smallerCompWord} .Você perdeu!`;
   document.getElementById(user).classList.add("lose");
   setTimeout(function() {
     document.getElementById(user).classList.remove("lose");
@@ -61,9 +61,9 @@ function draw(user, computer) {
   const smallerCompWord = "comp".fontsize(2).sub();
   result_div.innerHTML = `${convertToWord(
     user
-  )}${smallerUserWord} equals to ${convertToWord(
+  )}${smallerUserWord} é igual a ${convertToWord(
     computer
-  )}${smallerCompWord} .It's a draw!`;
+  )}${smallerCompWord} .Empatou!`;
   document.getElementById(user).classList.add("draw");
   setTimeout(function() {
     document.getElementById(user).classList.remove("draw");
